@@ -121,14 +121,26 @@ makeBuddies();
 
 function beautifulStranger() {
   // change the 'Strider' textnode to 'Aragorn'
+  var strider = document.getElementById('buddies3');
+  strider.innerText = "Aragorn";
+
 }
+beautifulStranger();
 
 
 // Part 6
 
 function leaveTheShire() {
   // assemble the hobbits and move them to Rivendell
+  var hobbits = document.getElementById('hobbitslist');
+console.log(hobbits);
+var rivendell = document.querySelectorAll("article");
+rivendell[1].appendChild(hobbits);
+
 }
+
+leaveTheShire();
+
 
 
 // Part 7
