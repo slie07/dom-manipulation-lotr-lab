@@ -48,6 +48,7 @@ makeMiddleEarth();
 
 
 var hobbitslist = document.createElement("ul");
+hobbitslist.setAttribute('id', 'hobbitsList');
 
 
 
@@ -132,10 +133,11 @@ beautifulStranger();
 
 function leaveTheShire() {
   // assemble the hobbits and move them to Rivendell
-  var hobbits = document.getElementById('hobbitslist');
+ 
 console.log(hobbits);
 var rivendell = document.querySelectorAll("article");
-rivendell[1].appendChild(hobbits);
+console.log(rivendell[1]);
+rivendell[1].appendChild(hobbitslist);
 
 }
 
